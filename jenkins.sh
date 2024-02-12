@@ -3,7 +3,7 @@ agent any
     stages {
         stage('SCM') {
             steps {
-                echo "hello world"
+                 sh "git ls-remote -h -- git@github.com:napoorva2k/pollSCM.git HEAD"
             }
         }
     }
